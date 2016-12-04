@@ -99,7 +99,7 @@ function find_account(number) {
  * Find accounts and store them in the database
  */
 function find_friends() {
-  let start = 0, end = 999999999;
+  let start = 0, end = 9999999999;
 
   Promise.coroutine(function*() {
     for (let i = end; i >= start; i--) {
