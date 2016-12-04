@@ -1,0 +1,19 @@
+{
+  "name": "hello-friend-facebook",
+  "version": "0.0.1",
+  "engines": {
+    "node": "6.2.2"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "bluebird": "latest",
+    "nightmare": "latest",
+    "sequelize": "latest",
+    "mysql": "latest"
+  },
+  "author": "Henrikh Kantuni, and Shahen Kosyan"
+}
