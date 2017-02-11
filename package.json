@@ -1,8 +1,8 @@
 {
-  "name": "hello-friend-facebook",
-  "version": "1.0.0",
+  "name": "h3ll0_fr13nd",
+  "version": "0.9.0",
   "engines": {
-    "node": "6.2.2"
+    "node": "latest"
   },
   "main": "app.js",
   "scripts": {
@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "bluebird": "latest",
-    "nightmare": "latest",
-    "sequelize": "latest",
-    "mysql": "latest"
+    "nightmare": "latest"
   },
   "author": "Henrikh Kantuni, Shahen Kosyan, Nairen Cao and Derek Acosta"
 }
