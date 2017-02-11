@@ -19,9 +19,13 @@
     "url": "https://github.com/kantuni/h3ll0_fr13nd/issues"
   },
   "homepage": "https://github.com/kantuni/h3ll0_fr13nd",
-  "keywords": ["facebook", "privacy", "hacking"],
+  "keywords": [
+    "facebook",
+    "privacy",
+    "hacking"
+  ],
   "author": "Henrikh Kantuni, Shahen Kosyan",
-  "contributors: [
+  "contributors": [
     "Nairen Cao",
     "Derek Acosta"
   ]
