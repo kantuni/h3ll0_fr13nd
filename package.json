@@ -20,5 +20,9 @@
   },
   "homepage": "https://github.com/kantuni/h3ll0_fr13nd",
   "keywords": ["facebook", "privacy", "hacking"],
-  "author": "Henrikh Kantuni, Shahen Kosyan, Nairen Cao and Derek Acosta"
+  "author": "Henrikh Kantuni, Shahen Kosyan",
+  "contributors: [
+    "Nairen Cao",
+    "Derek Acosta"
+  ]
 }
