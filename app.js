@@ -1,5 +1,5 @@
 /**
- * Created by Henrikh Kantuni, Shahen Kosyan, Nairen Cao, and Derek Acosta on 11/19/16.
+ * Created by Henrikh Kantuni and Shahen Kosyan on 11/19/16.
  */
 
 
