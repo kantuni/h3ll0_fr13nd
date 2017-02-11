@@ -9,14 +9,14 @@
  * Generate a random number between min and max, inclusive.
  * @param min: {Number} minimum value
  * @param max: {Number} maximum value
- * @return {Number} a random number
+ * @return {Number} a random number from [min, max]
  */
 Math._random = (min, max) => Math.floor(Math.random() * max) + min;
 
 /**
- * Pad leading zeroes to the number up to the given size
+ * Pad a number with leading 0s up to the given size
  * @param size: {Number} size of the string
- * @return {String} number with 0s
+ * @return {String} number with leading 0s
  */
 // BTDT: don't use arrow functions
 Number.prototype.zfill = function (size) {
