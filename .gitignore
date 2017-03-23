@@ -1,8 +1,8 @@
 ### OSX ###
-*.DS_Store
+.DS_Store
 
 ### JetBrains ###
 .idea/
 
-### Node.js ###
+### NPM ###
 node_modules/
