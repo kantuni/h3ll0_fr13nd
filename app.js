@@ -21,6 +21,7 @@ const browser = Nightmare({show: true})
  * @param number: {Number} phone number
  * @return {Object} account
  */
+
 function findAccount(number) {
   return new Promise((resolve, reject) => {
     browser
@@ -73,6 +74,7 @@ function findAccount(number) {
 /**
  * Find accounts and store them in a file.
  */
+
 function findFriends() {
   let countryCode = '+1';
   let start = 0, end = 9999999999;
