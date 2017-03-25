@@ -11,6 +11,7 @@
  * @param max: {Number} maximum value
  * @return {Number} a random number from [min, max]
  */
+
 Math._random = (min, max) => Math.floor(Math.random() * max) + min;
 
 /**
@@ -18,7 +19,8 @@ Math._random = (min, max) => Math.floor(Math.random() * max) + min;
  * @param size: {Number} size of the string
  * @return {String} number with leading 0s
  */
-// BTDT: don't use arrow functions
+
+// BTDT: don't use an arrow function here
 Number.prototype.zfill = function (size) {
   let s = String(this);
   while (s.length < size) {
