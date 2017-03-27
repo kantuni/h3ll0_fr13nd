@@ -8,13 +8,11 @@
 const Nightmare = require('nightmare');
 const Promise = require('bluebird');
 const fs = require('fs');
-
 require('./helpers');
 
 const browser = Nightmare({show: true})
   .useragent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0.1 Safari/602.2.14')
   .viewport(1366, 768);
-
 
 /**
  * Find an account with the given phone number via "Forgot account?"
@@ -69,7 +67,6 @@ function findAccount(number) {
       });
   });
 }
-
 
 /**
  * Find accounts and store them in a file.
