@@ -16,7 +16,7 @@ const browser = Nightmare({show: true})
 
 /**
  * Find an account with the given phone number via "Forgot account?"
- * @param number: {Number} phone number
+ * @param number: phone number
  */
 
 function findAccount(number) {
