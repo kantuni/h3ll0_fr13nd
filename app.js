@@ -78,7 +78,6 @@ async function findFriends() {
 
   for (let i = start; i <= end; ++i) {
     console.log(countryCode + (i).zfill(numberLength));
-
     let result = await findAccount(countryCode + i.zfill(numberLength));
     if (result.name) {
       console.log(result);
