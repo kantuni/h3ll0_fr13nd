@@ -6,9 +6,9 @@
 'use strict';
 
 /**
- * Generate a random number between min and max, inclusive.
- * @param min: minimum value
- * @param max: maximum value
+ * Generate a random number between the given minimum and maximum, inclusive.
+ * @param min: the minimum value
+ * @param max: the maximum value
  * @return a random number from [min, max]
  */
 
