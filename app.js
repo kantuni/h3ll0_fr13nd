@@ -16,7 +16,6 @@ const browser = Nightmare({show: true})
 
 /**
  * Find an account with the given phone number via "Forgot account?"
- * @param number: phone number
  */
 
 function findAccount(number) {
@@ -95,6 +94,6 @@ async function findFriends() {
   await browser.end();
 }
 
-// This is a Proof of Concept. The information provided 
-// here is for educational purposes only.
+// This is a Proof of Concept. The information provided here
+// is for educational purposes only.
 findFriends();
