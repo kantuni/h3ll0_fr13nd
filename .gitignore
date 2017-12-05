@@ -4,5 +4,5 @@
 # IDE
 .idea/
 
-# NPM
+# Node
 node_modules/
