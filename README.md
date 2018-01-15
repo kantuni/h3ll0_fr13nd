@@ -13,4 +13,4 @@
 - Derek Acosta ([@derekacosta](https://github.com/derekacosta))
 
 ### Terms of Use
-This is a **Proof of Concept**. The information provided here is for educational purposes only.
+This is a Proof of Concept. The information provided here is for educational purposes only.
