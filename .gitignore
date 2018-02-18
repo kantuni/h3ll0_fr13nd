@@ -2,7 +2,7 @@
 .DS_Store
 
 # IDE
-.idea/
+.idea
 
-# Node
-node_modules/
+# Node.js
+node_modules
