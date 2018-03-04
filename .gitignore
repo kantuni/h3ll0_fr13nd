@@ -1,8 +1,6 @@
-# OSX
-.DS_Store
-
-# IDE
-.idea
-
-# Node.js
+# Dependencies
 node_modules
+
+# Miscellaneous
+.DS_Store
+.idea
