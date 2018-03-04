@@ -75,7 +75,7 @@ async function findFriends() {
   let numberLength = 10;
   let start = 0, end = 9999999999;
 
-  for (let i = start; i <= end; ++i) {
+  for (let i = start; i <= end; i++) {
     console.log(countryCode + (i).zfill(numberLength));
     let result = await findAccount(countryCode + i.zfill(numberLength));
     if (result.name) {
