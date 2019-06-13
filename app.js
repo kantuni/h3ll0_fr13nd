@@ -17,7 +17,6 @@ const browser = Nightmare({show: true})
 /**
  * Find an account with the given phone number via "Forgot account?"
  */
-
 function findAccount(number) {
   return new Promise((resolve, reject) => {
     browser
@@ -69,7 +68,6 @@ function findAccount(number) {
 /**
  * Find accounts and store them in a file.
  */
-
 async function findFriends() {
   let countryCode = '+1';
   let numberLength = 10;
